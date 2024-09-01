@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" id="resourcePage">
+    <head>
+        <meta charset="UTF-8">
+        <title>Study Easy_Science</title>
+        <link rel="icon" type="image/png" href="images/logoblack.png">
+        <link rel="stylesheet" href="css.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Dosis:wght@200..800&display=swap');
+        </style>
+    </head>
+   
+    <header>
+        <div class="headerDiv" id="hDiv">
+            <a href="study.html">
+                <img src="images/logowhite.png"class="logoImageResource" alt="Study Easy Logo">
+                <h1 class="titleResource">Study Easy</h1><img src="images/home.png" class="homeS" alt="Go home">
+            </a>
+            <ul class="navbarResource" id="nRes">
+                <li class="resourceNavLinkExtend" id="activePage">
+                    <div class="subjectsMain">Science&#11206;</div>
+                    <div class="allSubjects">
+                        <ul class="subjectsUl">
+                            <li class="subjectLi"><a href="math.html">Math</a></li>
+                            <li class="subjectLi"><a href="english.html">English</a></li>
+                            <li class="subjectLi" id="currentS">Science</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="resourceNavLink"><a href="encourage.html">Encouragement</a></li>
+                <li class="resourceNavLink"><a href="time-management.html">Time Management</a></li>
+                <li class="resourceNavLink"><a href="important-info.html">Important Info</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="webfunctions">
+        <input type="checkbox" id="checked1">
+        <label for="checked1" class='box1'>
+            <img src="images/timer.png" class='timer' alt="Timer indicater">
+        </label>
+        <div class="timerpanel">
+            <div class="timer" id="timerID">
+                <div class="inputGroup">
+                    <label class="inputLabel"></label>
+                    <input onkeyup="SetTimerValue()" class="inputs" id="hours" placeholder="00" type="number">
+                </div>
+                <div class="inputGroup">
+                    <label class="inputLabel"></label>
+                    <input onkeyup="SetTimerValue()" class="inputs" id="minutes" placeholder="00" type="number">
+                </div>
+                <div class="inputGroup">
+                    <label class="inputLabel"></label>
+                    <input onkeyup="SetTimerValue()" class="inputs" id="seconds" placeholder="00" type="number">
+                </div>
+            </div>
+       
+            <p id="output">
+                <span class="timeLeft" id="outputHour">00</span> : <span class="timeLeft" id="outputMin">00</span> : <span class="timeLeft" id="outputSec">00</span>
+            </p>
+       
+            <div class="timerButtonsBox">
+                <button onclick="StartTimer()" class="timerButtons" id="start">Start</button>
+                <button onclick="stopTimer()" class="timerButtons" id="stop">stop</button>
+                <button onclick="cancelTimer()" class="timerButtons" id="cancel">Cancel</button>
+            </div>
+        </div>
+
+
+        <input type="checkbox" id="checked2">
+        <label for="checked2" class='box2'>
+            <img src="images/notes.png" class='notes' alt="Notes indicater">
+        </label>
+        <div class="notespanel">
+            <p contenteditable="true">Click here to edit. Once the page is reloaded or switched notes are reset.</p>
+        </div>
+    </div>
+
+
+    <div class="resourceMain">
+        <div class="resourceMainTextBox">
+            <h1 class="resourceH1">Science</h1>
+            <h2 class="subtitle"> 12Earth & Space / 12Chemistry / 12Physics / 12Biology</h2>
+            <br>
+            <br>
+            <h2 class="resourceH2">12Earth & Space</h2>
+            <div class="courseInformation">
+
+
+                <ul class="informationText">
+                    <li>This course is Year 12 Earth and Space Science.</li>
+                    <li>By taking this course you will be mainly investigating and learning information about geography, the ocean system, the atmosphere system, and astronomy</li>
+                    <li>Future course opportunities this course provides are 13ESSC.</li>
+                </ul>
+            </div>
+            <br>
+
+
+            <h2 class="resourceH2">Advice from students</h2>
+            <br>
+            <h3 class="resourceH3">Anonymous no.2</h3>
+            <p>
+                In-class notes are very important!!! Work on diagrams because they CAN contribute to a higher grade if you don't write a good answer. Technically you do not have to do the achieved sections but it is much safer to do them! They don't take very long, usually a labeling diagram or filling out table questions. For the internals, make sure to check the marking schedule and past exemplars for the format your reports should be in so you don't miss anything.
+            </p>
+            <br>
+            <br>
+            <h2 class="resourceH2">12Chemistry</h2>
+            <div class="courseInformation">
+
+
+                <ul class="informationText">
+                    <li>This course is Year 12 Chemistry.</li>
+                    <li>By taking this course you will be mainly learning to understand the different aspects of chemistry which involves, chemical reactivity, oxidation, & more.</li>
+                    <li>Future course opportunities this course provides are 13CHEM.</li>
+                </ul>
+            </div>
+            <br>
+
+
+            <h2 class="resourceH2">Advice from students</h2>
+            <br>
+            <h3 class="resourceH3">Anonymous no.5</h3>
+            <p>
+                Flowcharts or mindmaps help especially with organics when needing to remember the different reactions (different catalysts used etc) for me personally anyway.
+                No brain too small website and online YouTube videos.                
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.10</h3>
+            <p>
+                try to understand the concepts and memorize
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.12</h3>
+            <p>
+                time management, practice papers, always talking to the teacher for clarification, and talking with your peers
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.15</h3>
+            <p>
+                For chemistry do heaps of past papers most of the content will be similar to past years, unlike biology, so if you do a bunch you'll be okay
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.16</h3>
+            <p>
+                A study using 'No Brain Too Small' and the exam past papers (the extended catalog can be found on the 'No Brain Too Small' website).
+                Make sure you memorize the definitions/typical written answers that come up nearly every year (reading through the answer schedules for each year can help you find out which questions always get repeated)
+                For organics, make sure the reaction scheme is burned into your brain-- it'll be useful for all questions, and level 3 chemistry as well.
+                For written answers, it's better to overwrite than underwrite (although make sure it's relevant and useful information/explanations)
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.17</h3>
+            <p>
+                Use flashcards to memorize reactions and other content. Put it to the test with past papers which will familiarise you with how questions are asked.
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.18</h3>
+            <p>
+                Notes, cue cards, past papers, lists - mindmaps
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.19</h3>    
+            <p class="resourceText">
+                make mind maps and solve questions
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.22</h3>
+            <p>
+                Understand concepts memorize what needs to be memorized, and do past papers.
+            </p>
+            <br>
+            <br>
+            <h2 class="resourceH2">12Physics</h2>
+            <div class="courseInformation">
+
+
+                <ul class="informationText">
+                    <li>This course is Year 12 Physics.</li>
+                    <li>By taking this course you will be mainly investigating and learning to understand different aspects of physics; This includes mechanics, electricity & electromagnetism, & more.</li>
+                    <li>Future course opportunities this course provides are 13PHYS.</li>
+
+
+                </ul>
+            </div>
+            <br>
+
+
+            <h2 class="resourceH2">Advice from students</h2>
+            <br>
+            <h3 class="resourceH3">Anonymous no.16</h3>
+            <p>
+                Study using 'No Brain Too Small' and the exam past papers (the extended catalog can be found on the 'No Brain Too Small' website). Make sure you know all the concepts and memorize the definitions/typical written answers that come up nearly every year (e.g. centripetal force). Always round to the lowest number of significant figures that are given in the question, and never forget units. In the exams, a formula will usually only be used once. Some 'explain' questions can be answered by just putting in the relevant equation and explaining it. Do any homework assigned throughout the year so that you don't have to do all the study at once.
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.17</h3>
+            <p>
+                Use Scipad and ESA books to practice the content and further your understanding, then put it to the test with past papers.
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.18</h3>
+            <p>
+                past papers, videos on past papers, notes
+            </p>
+            <h3 class="resourceH3">Anonymous no.19</h3>    
+            <p class="resourceText">
+                questions
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.21</h3>    
+            <p class="resourceText">
+                do past papers
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.22</h3>
+            <p>
+                Understand the curriculum, learn definitions, and then do as many practice questions as you can.
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.26</h3>
+            <p>
+                really know the basic concepts so you could be able to move onto level 3
+            </p>
+            <br>
+            <br>
+            <h2 class="resourceH2">12Biology</h2>
+            <div class="courseInformation">
+
+
+                <ul class="informationText">
+                    <li>This course is Year 12 Biology.</li>
+                    <li>By taking this course you will be mainly investigating and learning to understand different aspects of Biology; This includes life processes at a cellular level, genetic variation & change, patterns in an ecological community & more.</li>
+                    <li>Future course opportunities this course provides are 13BIOL.</li>
+                </ul>
+            </div>
+            <br>
+
+
+            <h2 class="resourceH2">Advice from students</h2>
+            <br>
+            <h3 class="resourceH3">Anonymous no.5</h3>
+            <p>
+                Remember definitions, you can pass with just definitions, and practice past papers. No Brain Too Small.
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.11</h3>
+            <p>
+                go over the checklists because if you miss even one small thing you'll get a resub</p>
+            <br>
+            <h3 class="resourceH3">Georgia</h3>
+            <p>
+                Give yourself plenty of time for internals as biology internals are quite long. Whether it is an at-home internal - don’t procrastinate just get it done! Or if it’s an in-class internal - make sure you have soaked up all the knowledge possible so you can write fast so you don’t miss out on anything. Always listen to the lessons thoroughly and take as many notes as possible. For exams, it is SUPER helpful to make mind maps of everything in the topic on one piece of paper. I did this and read it right before I walked into my exams and remembered everything.
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.15</h3>
+            <p>
+                For biology I really recommend getting the definitions into your brain asap, especially for exams cause there are so many (flashcards help). For internals go over everything with your teacher and even check with the head of bio as she oversees everything.
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.19</h3>
+            <p>
+                understand the concepts, even if you don't do past papers it's fine to use them to look at the level of detail you need
+            </p>
+            <br>
+        </div>
+</div>
+
+
+    <div class="footerPosition">
+            <!-- Buttons that bring the footer up-->
+            <input id="footerButton" type="checkbox">
+               
+            <label for="footerButton" class="footerLable">
+                <img title="credits" class="footerButtonArrow" src="images/svg-arrow.svg">
+            <span class="footerIndicater">Footer</span>
+            </label>
+            <label for="footerButton" class="footerLable2">
+                <img id="footerButtonCross" src="images/cross.svg" alt="Close footer">
+            </label>
+
+
+            <!-- The footer and the content inside-->
+            <footer class="footerMain">
+                <div class="footerMainPadding">
+                    <div class="footerLogo">
+                        <img src="images/logowhite.png"class="ilogo" alt="Website logo">
+                        <p class="footerTitle">Study Easy</p>
+                    </div>
+
+
+                    <div class="content">
+                        <div class="about">
+                            <h1 class="footerHeading">About</h1>
+                        <p class="footerText">
+                            <br>
+                            ©2024<br><br>
+                            2 Study Easy is a website developed for my level 3 Digital Tech internal<br><br>
+                            The purpose of this website is to make studying easier for Year 12 student.
+                        </p>
+                        </div>
+                        <div class="contributers">
+                            <h1 class="footerHeading">Contributers</h1>
+                        <p class="footerText">
+                            <br>
+                            34 different Anonymous contributors that have experienced Year 12.<br><br>
+                            The 5 Stakeholders gave feedback and opinions during the development of the website.
+                        </p>
+                        </div>
+                        <div class="atribution">
+                            <h1 class="footerHeading">Atribution</h1>
+                            <p class="footerText">
+                                <br>
+                                Image by <a href="https://pixabay.com/users/heckimg-24974271/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7574547">Michael Heck</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7574547">Pixabay</a>. Said image is used in the background of the website.
+                            </p>
+                        </div>
+                    </div>
+                </div>  
+            </footer>
+        </div>
+    <script src="timer.js"></script>
+    <script src="resource-navbar.js"></script>
+    <script src="timeout.js"></script>
+</html>

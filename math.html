@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" id="resourcePage">
+    <head>
+        <meta charset="UTF-8">
+        <title>Study Easy_Math</title>
+        <link rel="icon" type="image/png" href="images/logoblack.png">
+        <link rel="stylesheet" href="css.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Dosis:wght@200..800&display=swap');
+        </style>
+    </head>
+   
+    <header>
+        <div class="headerDiv" id="hDiv">
+            <a href="study.html">
+                <img src="images/logowhite.png"class="logoImageResource" alt="Study Easy Logo">
+                <h1 class="titleResource">Study Easy</h1><img src="images/home.png" class="homeS" alt="Go home">
+            </a>
+            <ul class="navbarResource" id="nRes">
+                <li class="resourceNavLinkExtend" id="activePage">
+                    <div class="subjectsMain">Maths&#11206;</div>
+                    <div class="allSubjects">
+                        <ul class="subjectsUl">
+                            <li class="subjectLi" id="currentS">Math</li>
+                            <li class="subjectLi"><a href="english.html">English</a></li>
+                            <li class="subjectLi"><a href="science.html">Science</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="resourceNavLink"><a href="encourage.html">Encouragement</a></li>
+                <li class="resourceNavLink"><a href="time-management.html">Time Management</a></li>
+                <li class="resourceNavLink"><a href="important-info.html">Important Info</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="webfunctions">
+        <input type="checkbox" id="checked1">
+        <label for="checked1" class='box1'>
+            <img src="images/timer.png" class='timer' alt="Timer indicater">
+        </label>
+        <div class="timerpanel">
+            <div class="timer" id="timerID">
+                <div class="inputGroup">
+                    <label class="inputLabel"></label>
+                    <input onkeyup="SetTimerValue()" class="inputs" id="hours" placeholder="00" type="number">
+                </div>
+                <div class="inputGroup">
+                    <label class="inputLabel"></label>
+                    <input onkeyup="SetTimerValue()" class="inputs" id="minutes" placeholder="00" type="number">
+                </div>
+                <div class="inputGroup">
+                    <label class="inputLabel"></label>
+                    <input onkeyup="SetTimerValue()" class="inputs" id="seconds" placeholder="00" type="number">
+                </div>
+            </div>
+       
+            <p id="output">
+                <span class="timeLeft" id="outputHour">00</span> : <span class="timeLeft" id="outputMin">00</span> : <span class="timeLeft" id="outputSec">00</span>
+            </p>
+       
+            <div class="timerButtonsBox">
+                <button onclick="StartTimer()" class="timerButtons" id="start">Start</button>
+                <button onclick="stopTimer()" class="timerButtons" id="stop">stop</button>
+                <button onclick="cancelTimer()" class="timerButtons" id="cancel">Cancel</button>
+            </div>
+        </div>
+
+
+        <input type="checkbox" id="checked2">
+        <label for="checked2" class='box2'>
+            <img src="images/notes.png" class='notes' alt="Notes indicater">
+        </label>
+        <div class="notespanel">
+            <p contenteditable="true">Click here to edit. Once the page is reloaded or switched notes are reset.</p>
+        </div>
+    </div>
+
+
+    <div class="resourceMain">
+        <div class="resourceMainTextBox">
+            <h1 class="resourceH1">Math</h1>
+            <h2 class="subtitle"> 12Math-P / 12Math-S / 12Math-X </h2>
+            <br>
+            <br>
+            <h2 class="resourceH2">12Math-S</h2>
+            <div class="courseInformation">
+
+
+                <ul class="informationText">
+                    <li>This course is Year 12 Mathematics & Statistics.</li>
+                    <li>By taking this course you will be mainly learning skills that help you utilize data.</li>
+                    <li>Future course opportunities this course provides are 13MATS.</li>
+                </ul>
+            </div>
+            <br>
+            <h2 class="resourceH2">Advice from students</h2>
+            <h3 class="resourceH3">Anonymous no.11</h3>
+            <p>
+                sit with smart people/people who don't muck around - you'll be more driven to do the work
+            </p>
+            <br>
+            <h3 class="resourceH3">Georgia</h3>
+            <p>
+                Pay as much attention as possible!!! It can be easy to get off task in Stats for many, but you will struggle when it comes to externals if you don’t pay attention. ASK YOUR TEACHER FOR HELP ONE ON ONE!! This is super helpful as it can be hard for a lot to grasp the concepts when the teacher is teaching them to everyone at the same time. Again, don’t put off your internals!! Stats internals are super long so stay on track as much as possible to prevent stress!!
+                What are some tips you would like to give on
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.15</h3>
+            <p>
+                For statistics, if you're struggling, go to the tutorials I did not know what was happening for one of my internals cause I had covid so I went along and honestly helped so much. Also, lots and lots of practice helps too
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.26</h3>
+            <p>
+                know basic concepts, most math subjects you should have a basic foundation
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.27</h3>
+            <p>
+                practice exams repeat
+            </p>
+            <br>
+            <br>
+            <h2 class="resourceH2">12Math-P</h2>
+            <div class="courseInformation">
+                <ul class="informationText">
+                    <li>This course is Year 12 Mathematics Progression.</li>
+                    <li>By taking this course you will be mainly learning a range of mathematic skills (graphs, algebra, trigonometry, calculus, & statistics).</li>
+                    <li>Future course opportunities this course provides are 13MATS & 13Calc.</li>
+                </ul>
+            </div>
+            <br>
+            <h2 class="resourceH2">Advice from students</h2>
+            <h3 class="resourceH3">Anonymous no.5</h3>
+            <p>
+                Past papers + Infinityplusone on YouTube.
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.10</h3>
+            <p>
+                do lots of practice questions: practice, practice, practice!            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.16</h3>
+            <p>
+                Work through ALL the exercises in the Walker maths book (or whichever booklet is used during class time / assigned for homework) and try to avoid looking at the answers until you've finished a question.
+                The DnD books (with the practice papers) are great for study, as well as the past practice exam papers-- try and do as many as possible and pick up on patterns.
+                Don't underestimate your abilities-- sometimes just coming back to a question after 10 minutes will help you understand it            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.18</h3>
+            <p>
+                past papers/questions - videos on past papers
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.27</h3>
+            <p>
+                practice exams repeat
+            </p>
+            <br>
+            <br>
+            <h2 class="resourceH2">12Math-X</h2>
+            <div class="courseInformation">
+                <ul class="informationText">
+                    <li>This course is Year 12 Mathematics Extension / Enrichment.</li>
+                    <li>By taking this course you will be learning more difficult mathematic skills some of which will be above your level</li>
+                    <li>Future course opportunities this course provides are 13CALX, 13MATS, & 13CALC.</li>
+                </ul>
+            </div>
+            <br>
+
+
+            <h2 class="resourceH2">Advice from students</h2>
+            <h3 class="resourceH3">Anonymous no.1</h3>
+            <p>
+                Take practice tests as the practice tests are the most beneficial to a student's understanding of match and how the test environment may feel to them. Read the question carefully as they often hide the information between the words and not on the diagram they provide. It is also important that they are careful with the test and read the questions carefully as most people lose marks not because they didn’t have the knowledge required for it but because they accidentally miss read the questions. You also must show your work in an orderly manner otherwise you might be marked down for it.
+            </p>
+            <h3 class="resourceH3">Anonymous no.21</h3>
+            <p>
+                do past papers
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.22</h3>
+            <p>
+                Do as many practice questions as you can.
+            </p>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+
+    <div class="footerPosition">
+            <!-- Buttons that bring the footer up-->
+            <input id="footerButton" type="checkbox">
+               
+            <label for="footerButton" class="footerLable">
+                <img title="credits" class="footerButtonArrow" src="images/svg-arrow.svg">
+            <span class="footerIndicater">Footer</span>
+            </label>
+            <label for="footerButton" class="footerLable2">
+                <img id="footerButtonCross" src="images/cross.svg" alt="Close footer">
+            </label>
+
+
+            <!-- The footer and the content inside-->
+            <footer class="footerMain">
+                <div class="footerMainPadding">
+                    <div class="footerLogo">
+                        <img src="images/logowhite.png"class="ilogo" alt="Website logo">
+                        <p class="footerTitle">Study Easy</p>
+                    </div>
+
+
+                    <div class="content">
+                        <div class="about">
+                            <h1 class="footerHeading">About</h1>
+                        <p class="footerText">
+                            <br>
+                            ©2024<br><br>
+                            2 Study Easy is a website developed for my level 3 Digital Tech internal<br><br>
+                            The purpose of this website is to make studying easier for Year 12 student.
+                        </div>
+                        <div class="contributers">
+                            <h1 class="footerHeading">Contributers</h1>
+                        <p class="footerText">
+                            <br>
+                            34 different Anonymous contributors that have experienced Year 12.<br><br>
+                            The 5 Stakeholders gave feedback and opinions during the development of the website.
+                        </p>
+                        </div>
+                        <div class="atribution">
+                            <h1 class="footerHeading">Atribution</h1>
+                            <p class="footerText">
+                                <br>
+                                Image by <a href="https://pixabay.com/users/heckimg-24974271/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7574547">Michael Heck</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7574547">Pixabay</a>. Said image is used in the background of the website.
+                            </p>
+                        </div>
+                    </div>
+                </div>  
+            </footer>
+        </div>
+    <script src="timer.js"></script>
+    <script src="resource-navbar.js"></script>
+    <script src="timeout.js"></script>
+</html>

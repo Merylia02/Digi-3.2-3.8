@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" id="resourcePage">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Study Easy_Important_Info</title>
+        <link rel="icon" type="image/png" href="images/logoblack.png">
+        <link rel="stylesheet" href="css.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Dosis:wght@200..800&display=swap');
+        </style>
+    </head>
+   
+    <header>
+        <div class="headerDiv" id="hDiv">
+            <a href="study.html">
+                <img src="images/logowhite.png"class="logoImageResource" alt="Study Easy Logo">
+                <h1 class="titleResource">Study Easy</h1><img src="images/home.png" class="homeS" alt="Go home">
+            </a>
+            <ul class="navbarResource" id="nRes">
+                <li class="resourceNavLinkExtend">
+                    <div class="subjectsMain">Subjects&#11206;</div>
+                    <div class="allSubjects">
+                        <ul class="subjectsUl">
+                                <li class="subjectLi"><a href="math.html">Math</a></li>
+                                <li class="subjectLi"><a href="english.html">English</a></li>
+                                <li class="subjectLi"><a href="science.html">Science</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="resourceNavLink"><a href="encourage.html">Encouragement</a></li>
+                <li class="resourceNavLink"><a href="time-management.html">Time Management</a></li>
+                <li class="resourceNavLink" id="current">Important Info</li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="webfunctions">
+        <input type="checkbox" id="checked1">
+        <label for="checked1" class='box1'>
+            <img src="images/timer.png" class='timer' alt="Timer indicater">
+        </label>
+        <div class="timerpanel">
+            <div class="timer" id="timerID">
+                <div class="inputGroup">
+                    <label for="hours" class="inputLabel"></label>
+                    <input onkeyup="SetTimerValue()" class="inputs" id="hours" placeholder="00" type="number">
+                </div>
+                <div class="inputGroup">
+                    <label for="minutes" class="inputLabel"></label>
+                    <input onkeyup="SetTimerValue()" class="inputs" id="minutes" placeholder="00" type="number">
+                </div>
+                <div class="inputGroup">
+                    <label for="seconds" class="inputLabel"></label>
+                    <input onkeyup="SetTimerValue()" class="inputs" id="seconds" placeholder="00" type="number">
+                </div>
+            </div>
+       
+            <p id="output">
+                <span class="timeLeft" id="outputHour">00</span> : <span class="timeLeft" id="outputMin">00</span> : <span class="timeLeft" id="outputSec">00</span>
+            </p>
+       
+            <div class="timerButtonsBox">
+                <button onclick="StartTimer()" class="timerButtons" id="start">Start</button>
+                <button onclick="stopTimer()" class="timerButtons" id="stop">stop</button>
+                <button onclick="cancelTimer()" class="timerButtons" id="cancel">Cancel</button>
+            </div>
+        </div>
+
+
+        <input type="checkbox" id="checked2">
+        <label for="checked2" class='box2'>
+            <img src="images/notes.png" class='notes' alt="Notes indicater">
+        </label>
+        <div class="notespanel">
+            <p contenteditable="true">Click here to edit. Once the page is reloaded or switched notes are reset.</p>
+        </div>
+    </div>
+
+
+    <div class="resourceMain">
+        <div class="resourceMainTextBox">
+            <h1 class="resourceH1">Important Information</h1>
+            <h2 class="subtitle">Basic Info / Finding Resources / Scholarship</h2>
+            <br>
+            <br>
+            <h2 class="resourceH2">Basics Info</h2>
+            <br>
+            <h3 class="resourceH3">Passing requirements</h3>
+            <br>
+            <div class="courseInformation">
+                <ul class="informationText">
+                    <li>80 credits of any subject are required to pass</li>
+                    <li>20 credits could be carried over from level 1. You shouldn’t rely on this.</li>
+                    <li>5 of the level 2 credits should be for reading and another 5 for writing. This is required for UE</li>
+                    <li>Credits can be obtained through internals and externals</li>
+                    <li>Most internals happen throughout the year some as tests, others as projects.</li>
+                    <li>Most externals happen at the end of year exams though some can occur throughout the year, they are usually tests that you study for. Some subjects may have projects / portfolio our yours externaly assessed for your external results.</li>
+                    <li>Lastly, there are portfolio subjects where internal and external credits are attached to a long-term project that can last a term or more.</li>
+                </ul>
+            </div>
+            <br>
+            <br>
+            <h3 class="resourceH3">Endorsements</h3>
+            <div class="courseInformation">
+                <ul class="informationText">
+                    <li>There are 2 endorsements that you can get, subject and certificate endorsements.</li>
+                </ul>
+                <br>
+                <ul class="informationText">
+                    <li>For subject endorsements, you would need to get 14 or more level 2 credits in the subject of your target level or higher.</li>
+                    <li>It is also required that a minimum of 3 credits are internals and externals to prove that you are competent in both scenarios</li>
+                </ul>
+                <br>
+                <ul class="informationText">
+                    <li>For certificate endorsements, you would need to get 50 or more level 2 or higher credits of your target level or higher. You will also have to meet the level 2 passing requirement.</li>
+                    <li>If you excelled in level 1 and got level 2 credits last year, these credits will also count towards your certificate endorsement.</li>
+                </ul>
+            </div>
+            <br>
+            <br>
+            <h3 class="resourceH2">Finding Resources</h3>
+            <div class="courseInformation">
+                <ul class="informationText">
+                    <li>You can get the most resources from your teacher as long as you ask for them.</li>
+                    <li>You can also look for resources online, on YouTube, and on many other platforms (these resources often help you understand the requirements of the internal/external that you're looking for).</li>
+                    <li>You can get practice exams on the internet </li>
+                </ul>
+                <br>
+                <ul class="informationText">
+                    <li>The easiest way to find the resources you need is by understanding the web link</li>
+                    <li>An example web link looks like this:</li>
+                    <li>https://---/---/----resource/(type of resource)/(year)/(internal / external code)-(type of resource)-(year).pdf</li>
+                    <li>You can change the resource that you are looking at by changing what I have placed in brackets</li>
+                    <li>By changing exams to schedules & exm to ass; you’ll get the answer to the practice paper unless it doesn’t exist and vice versa.</li>
+                    <li>Test this out yourself</li>
+                    <li>This doesn't apply universaly and you have to figure out the pattern of the resource your looking at for yourself</li>
+                </ul>
+                <br>
+                <ul class="informationText">
+                    <li>Finding patterns in resources will help you navigate all sorts of resources so this is a very important skill to understand.</li>
+                    <li>You should also test out past digital exams online if you plan on taking 1 digitally. This is due to the fact that it is quite finicky and it may not work on all laptops so it’s good to get it tested earlier than to panic during the exam.</li>
+                </ul>
+            </div>
+            <br>
+            <br>
+            <h3 class="resourceH2">Scholarship</h3>
+            <div class="courseInformation">
+                <div class="informationText">
+                    <p class="resourceText">Year 12 is very important due to the fact that university scholarships look at your level 2 results & not your level 3 results. This is due to the fact that when they hand out their scholarships the level 3 results still aren’t out yet.</p>
+                    <br>
+                    <p class="resourceText">different university will have different rank score requirement for scholarship aplication. I recommend getting the highest rank score possible for you. The rank score is calculated by 80 credits of your top 5 UE-approved subjects. Achieved credits are worth 2 rank scores, Merit credits are worth 3 rank scores, and Excellence credits are worth 4 rank scores.</p>
+                    <br>
+                    <p class="resourceText">The most important thing for subject scholarship is to ask your teacher and attend any scholarship meeting. You will get the required subject scholarship information there. Depending on the amount and level of your subject scholarship you will get different awards.</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footerPosition">
+            <!-- Buttons that bring the footer up-->
+            <input id="footerButton" type="checkbox">
+               
+            <label for="footerButton" class="footerLable">
+                <img title="credits" class="footerButtonArrow" src="images/svg-arrow.svg">
+            <span class="footerIndicater">Footer</span>
+            </label>
+            <label for="footerButton" class="footerLable2">
+                <img id="footerButtonCross" src="images/cross.svg" alt="Close footer">
+            </label>
+
+
+            <!-- The footer and the content inside-->
+            <footer class="footerMain">
+                <div class="footerMainPadding">
+                    <div class="footerLogo">
+                        <img src="images/logowhite.png"class="ilogo" alt="Website logo">
+                        <p class="footerTitle">Study Easy</p>
+                    </div>
+
+
+                    <div class="content">
+                        <div class="about">
+                            <h1 class="footerHeading">About</h1>
+                        <p class="footerText">
+                            <br>
+                            ©2024<br><br>
+                            2 Study Easy is a website developed for my level 3 Digital Tech internal<br><br>
+                            The purpose of this website is to make studying easier for Year 12 student.
+                        </p>
+                        </div>
+                        <div class="contributers">
+                            <h1 class="footerHeading">Contributers</h1>
+                        <p class="footerText">
+                            <br>
+                            34 different Anonymous contributors that have experienced Year 12.<br><br>
+                            The 5 Stakeholders gave feedback and opinions during the development of the website.
+                        </p>
+                        </div>
+                        <div class="atribution">
+                            <h1 class="footerHeading">Atribution</h1>
+                            <p class="footerText">
+                                <br>
+                                Image by <a href="https://pixabay.com/users/heckimg-24974271/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7574547">Michael Heck</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7574547">Pixabay</a>. Said image is used in the background of the website.
+                            </p>
+                        </div>
+                    </div>
+                </div>  
+            </footer>
+        </div>
+    <script src="timer.js"></script>
+    <script src="resource-navbar.js"></script>
+    <script src="timeout.js"></script>
+</html>

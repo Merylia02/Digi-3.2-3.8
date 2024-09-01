@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" id="indexPage">
+    <head>
+        <title>Study Easy</title>
+        <link rel="icon" type="image/png" href="images/logoblack.png">
+        <link rel="stylesheet" href="css.css">
+        <meta charset="UTF-8">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Dosis:wght@200..800&display=swap');
+        </style>
+    </head>
+       
+    <body>
+        <header>
+            <!--fixed on screen navigation bar-->
+            <div class=alf>
+                <!--Logo and links that brings the user to different pages of the website-->
+                <div class="navigation">
+                    <img src="images/logowhite.png" class="logoImage" alt="Website logo">
+                    <h1 class="title">Study Easy</h1>
+                    <ul class="navbar">
+                        <li class="items"><a href="important-info.html"><div class="adjust">Important Info</div></a></li>
+                        <li class="items"><a href="time-management.html"><div class="adjust">Time Managment</div></a></li>
+                        <li class="items"><a href="math.html"><div class="adjust">Maths</div></a></li>
+                        <li class="items"><a href="english.html"><div class="adjust">English</div></a></li>
+                        <li class="items"><a href="science.html"><div class="adjust">Science</div></a></li>
+                        <li class="items"><a href="encourage.html"><div class="adjust">Encouragement</div></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    <!--Useful functions to the website-->
+        <div class="webfunctions">
+            <input type="checkbox" id="checked1">
+            <label for="checked1" class='box1'>
+                <img src="images/timer.png" class='timer' alt="Timer indicater">
+            </label>
+            <div class="timerpanel">
+                <div class="timer" id="timerID">
+                    <div class="inputGroup">
+                        <label class="inputLabel"></label>
+                        <input onkeyup="SetTimerValue()" class="inputs" id="hours" placeholder="00" type="number">
+                    </div>
+                    <div class="inputGroup">
+                        <label class="inputLabel"></label>
+                        <input onkeyup="SetTimerValue()" class="inputs" id="minutes" placeholder="00" type="number">
+                    </div>
+                    <div class="inputGroup">
+                        <label class="inputLabel"></label>
+                        <input onkeyup="SetTimerValue()" class="inputs" id="seconds" placeholder="00" type="number">
+                    </div>
+                </div>
+           
+                <p id="output">
+                    <span class="timeLeft" id="outputHour">00</span> : <span class="timeLeft" id="outputMin">00</span> : <span class="timeLeft" id="outputSec">00</span>
+                </p>
+           
+                <div class="timerButtonsBox">
+                    <button onclick="StartTimer()" class="timerButtons" id="start">Start</button>
+                    <button onclick="stopTimer()" class="timerButtons" id="stop">stop</button>
+                    <button onclick="cancelTimer()" class="timerButtons" id="cancel">Cancel</button>
+                </div>
+            </div>
+
+
+            <input type="checkbox" id="checked2">
+            <label for="checked2" class='box2'>
+                <img src="images/notes.png" class='notes' alt="Notes indicater">
+            </label>
+            <div class="notespanel">
+                <p contenteditable="true">Click here to edit. Once the page is reloaded or switched notes are reset.</p>
+            </div>
+        </div>
+    <!--Where the information on the screen is-->
+        <div class="main">
+        </div>
+
+
+        <div class="footerPosition">
+            <!-- Buttons that bring the footer up-->
+            <input id="footerButton" type="checkbox">
+               
+            <label for="footerButton" class="footerLable">
+                <img title="credits" class="footerButtonArrow" src="images/svg-arrow.svg">
+            <span class="footerIndicater">Footer</span>
+            </label>
+            <label for="footerButton" class="footerLable2">
+                <img id="footerButtonCross" src="images/cross.svg" alt="Close footer">
+            </label>
+
+
+            <!-- The footer and the content inside-->
+            <footer class="footerMain">
+                <div class="footerMainPadding">
+                    <div class="footerLogo">
+                        <img src="images/logowhite.png"class="ilogo" alt="Website logo">
+                        <p class="footerTitle">Study Easy</p>
+                    </div>
+
+
+                    <div class="content">
+                        <div class="about">
+                            <h1 class="footerHeading">About</h1>
+                        <p class="footerText">
+                            <br>
+                            ©2024<br><br>
+                            2 Study Easy is a website developed for my level 3 Digital Tech internal<br><br>
+                            The purpose of this website is to make studying easier for Year 12 student.
+                        </p>
+                        </div>
+                        <div class="contributers">
+                            <h1 class="footerHeading">Contributers</h1>
+                        <p class="footerText">
+                            <br>
+                            34 different Anonymous contributors that have experienced Year 12.<br><br>
+                            The 5 Stakeholders gave feedback and opinions during the development of the website.
+                        </p>
+                        </div>
+                        <div class="atribution">
+                            <h1 class="footerHeading">Atribution</h1>
+                            <p class="footerText">
+                                <br>
+                                Image by <a href="https://pixabay.com/users/heckimg-24974271/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7574547">Michael Heck</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7574547">Pixabay</a>. Said image is used in the background of the website.
+                            </p>
+                        </div>
+                    </div>
+                </div>  
+            </footer>
+        </div>
+        <script src="timer.js"></script>
+        <script src="timeout.js"></script>
+    </body>    
+</html>

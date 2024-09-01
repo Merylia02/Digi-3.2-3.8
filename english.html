@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" id="resourcePage">
+    <head>
+        <meta charset="UTF-8">
+        <title>Study Easy_English</title>
+        <link rel="icon" type="image/png" href="images/logoblack.png">
+        <link rel="stylesheet" href="css.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Dosis:wght@200..800&display=swap');
+        </style>
+    </head>
+    <header>
+        <div class="headerDiv" id="hDiv">
+            <a href="study.html">
+                <img src="images/logowhite.png"class="logoImageResource" alt="Study Easy Logo">
+                <h1 class="titleResource">Study Easy</h1><img src="images/home.png" class="homeS" alt="Go home">
+            </a>
+            <ul class="navbarResource" id="nRes">
+                <li class="resourceNavLinkExtend" id="activePage">
+                    <div class="subjectsMain">English &#11206;</div>
+                    <div class="allSubjects">
+                        <ul class="subjectsUl">
+                            <li class="subjectLi"><a href="math.html">Math</a></li>
+                            <li class="subjectLi" id="currentS">English</li>
+                            <li class="subjectLi"><a href="science.html">Science</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="resourceNavLink"><a href="math.html">Encouragement</a></li>
+                <li class="resourceNavLink"><a href="time-management.html">Time Management</a></li>
+                <li class="resourceNavLink"><a href="important-info.html">Important Info</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="webfunctions">
+        <input type="checkbox" id="checked1">
+        <label for="checked1" class='box1'>
+            <img src="images/timer.png" class='timer' alt="Timer indicater">
+        </label>
+        <div class="timerpanel">
+            <div class="timer" id="timerID">
+                <div class="inputGroup">
+                    <label class="inputLabel"></label>
+                    <input onkeyup="SetTimerValue()" class="inputs" id="hours" placeholder="00" type="number">
+                </div>
+                <div class="inputGroup">
+                    <label class="inputLabel"></label>
+                    <input onkeyup="SetTimerValue()" class="inputs" id="minutes" placeholder="00" type="number">
+                </div>
+                <div class="inputGroup">
+                    <label class="inputLabel"></label>
+                    <input onkeyup="SetTimerValue()" class="inputs" id="seconds" placeholder="00" type="number">
+                </div>
+            </div>
+       
+            <p id="output">
+                <span class="timeLeft" id="outputHour">00</span> : <span class="timeLeft" id="outputMin">00</span> : <span class="timeLeft" id="outputSec">00</span>
+            </p>
+       
+            <div class="timerButtonsBox">
+                <button onclick="StartTimer()" class="timerButtons" id="start">Start</button>
+                <button onclick="stopTimer()" class="timerButtons" id="stop">stop</button>
+                <button onclick="cancelTimer()" class="timerButtons" id="cancel">Cancel</button>
+            </div>
+        </div>
+
+
+        <input type="checkbox" id="checked2">
+        <label for="checked2" class='box2'>
+            <img src="images/notes.png" class='notes' alt="Notes indicater">
+        </label>
+        <div class="notespanel">
+            <p contenteditable="true">Click here to edit. Once the page is reloaded or switched notes are reset.</p>
+        </div>
+    </div>
+
+
+    <div class="resourceMain">
+        <div class="resourceMainTextBox">
+            <h1 class="resourceH1">English</h1>
+            <h2 class="subtitle"> 12English-V / 12English-L / 12English-W</h2>
+            <br>
+            <br>
+            <h2 class="resourceH2">12English-V</h2>
+            <br>
+            <div class="courseInformation">
+                <ul class="informationText">
+                    <li>This course is Year 12 English visual.</li>
+                    <li>By taking this course you will be mainly learning how to analyze different visual texts (movies), you will also be crafting your own oral text.</li>
+                    <li>Future course opportunities this course provides are 13ENG & 13ENGW.</li>
+                </ul>
+            </div>
+            <br>
+
+
+            <h2 class="resourceH2">Advice from students</h2>
+            <br>
+            <h3 class="resourceH3">Anonymous no.2</h3>
+            <p>
+                Engage in class and always remember to link to the wider world + society and/or the author's purpose for both unfamiliar and external essays. Comparatively, notes are not that important but always remember a few SPECIFIC film techniques in important scenes for your external question.
+            </p>
+            <br>
+            <br>
+            <h2 class="resourceH2">12English-L</h2>
+            <br>
+            <div class="courseInformation">
+                <ul class="informationText">
+                    <li>This course is Year 12 English Literacy.</li>
+                    <li>By taking this course you will be mainly learning how to analyze different texts, you will also be crafting your own oral text.</li>
+                    <li>Future course opportunities this course provides are 13ENG & 13ENGW.</li>
+                </ul>
+            </div>
+            <br>
+
+
+            <h2 class="resourceH2">Advice from students</h2>
+            <br>
+            <h3 class="resourceH3">Anonymous no.5</h3>
+            <p>
+                Plan out details in your film or text specific to past exam questions e.g. setting, theme, character development, author's purpose, language features/film techniques, etc.
+                Unfamiliar - Just memorize different language techniques and how to identify them by using the workbook given (past papers too)
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.8</h3>
+            <p>
+                Try to consume a lot of different media like reading, watching movies, etc to find the connections between different texts, and also to see how techniques are used in correlation with other pieces
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.11</h3>
+            <p>
+                English is easy so not much
+            </p>
+            <br>
+            <h3 class="resourceH3">Georgia</h3>
+            <p>
+                Soak in as much knowledge from your teacher as you can as it will help you develop a more mature way of looking at texts which is the main thing that will help you succeed in Level 2/3!! It may seem silly or far-fetched when your teacher is talking about different ideas or ways of thinking in class, BUT these are the ideas that will get you good grades. The markers look for different and mature ways of thinking as a pose to long answers to questions.
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.12</h3>
+            <p>
+                Just make sure to read over your text/film over and over again and to analyze it through to the point that it's engraved into your head, it makes it really easy for you to tackle questions (externals) in terms of internals, time management is super important.
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.15</h3>
+            <p>
+                For English, I take English writing so some of the standards are different but make sure to proofread everything. Check with your teacher and you know what makes sense and what doesn't. The exam questions are slightly different they make a statement like 'one key moment in the text led to significant learning' You structure your essay on whether you agree, disagree, or slightly agree and relate to your text.
+            </p>
+            <br>
+            <h3 class="resourceH3">Anonymous no.18</h3>
+            <p>
+                Mind maps for each paper - quotes, author's/director's purpose, characters, language/film techniques, etc.
+            </p>
+            <br>
+            <br>
+            <h2 class="resourceH2">12English-W</h2>
+            <br>
+            <div class="courseInformation">
+                <ul class="informationText">
+                    <li>This course is Year 12 English writing.</li>
+                    <li>By taking this course you will be mainly learning how to analyze different texts, you will also be crafting your own texts including an oral text.</li>
+                    <li>Future course opportunities this course provides are 13ENG & 13ENGW.</li>
+                </ul>
+            </div>
+            <br>
+
+
+            <h2 class="resourceH2">Advice from students</h2>
+            <br>
+            <h3 class="resourceH3">Anonymous no.16</h3>
+            <p>
+                Always read the book/watch the movie-- it's a lot easier to remember things if you've actually read/watched what's required. Practice writing essays, practice while being timed (I like to do 20-minute paragraphs with breaks in between), practice making essay plans, practice writing without looking at notes/quotes, practice integrating quotes seamlessly, and practice writing well-structured paragraphs (using PEDAL, etc). Memorise lines that you can use no matter what the question is-- e.g. for your 'link to society' part of the explanation of quotes. Definitely make a shared notes/quotes document with your friends for the film and novel (if you're in the same class, of course). Memorise quotes by covering them up and saying them out loud; don't worry if you don't get it right word for word in the exam since the marker probably won't realize (unless it's a very popular line). For the writing portfolio, make sure it's concise and every single sentence and word is necessary. Proofread and peer-edit with friends/classmates as much as possible. For the unfamiliar, always plan your answers first and memorize the recommended structure for answering. It's also helpful to read good essays (from exemplars etc) for both unfamiliar/essays and analyze how they got good marks-- take note of their structure, length, vocabulary, etc.
+            </p>
+            <br>
+        </div>
+    </div>
+
+
+    <div class="footerPosition">
+            <!-- Buttons that bring the footer up-->
+            <input id="footerButton" type="checkbox">
+               
+            <label for="footerButton" class="footerLable">
+                <img title="credits" class="footerButtonArrow" src="images/svg-arrow.svg">
+            <span class="footerIndicater">Footer</span>
+            </label>
+            <label for="footerButton" class="footerLable2">
+                <img id="footerButtonCross" src="images/cross.svg" alt="Close footer">
+            </label>
+
+
+            <!-- The footer and the content inside-->
+            <footer class="footerMain">
+                <div class="footerMainPadding">
+                    <div class="footerLogo">
+                        <img src="images/logowhite.png"class="ilogo" alt="Website logo">
+                        <p class="footerTitle">Study Easy</p>
+                    </div>
+
+
+                    <div class="content">
+                        <div class="about">
+                            <h1 class="footerHeading">About</h1>
+                        <p class="footerText">
+                            <br>
+                            ©2024<br><br>
+                            2 Study Easy is a website developed for my level 3 Digital Tech internal<br><br>
+                            The purpose of this website is to make studying easier for Year 12 student.
+                        </p>
+                        </div>
+                        <div class="contributers">
+                            <h1 class="footerHeading">Contributers</h1>
+                        <p class="footerText">
+                            <br>
+                            34 different Anonymous contributors that have experienced Year 12.<br><br>
+                            The 5 Stakeholders gave feedback and opinions during the development of the website.
+                        </p>
+                        </div>
+                        <div class="atribution">
+                            <h1 class="footerHeading">Atribution</h1>
+                            <p class="footerText">
+                                <br>
+                                Image by <a href="https://pixabay.com/users/heckimg-24974271/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7574547">Michael Heck</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7574547">Pixabay</a>. Said image is used in the background of the website.
+                            </p>
+                        </div>
+                    </div>
+                </div>  
+            </footer>
+        </div>
+    <script src="timer.js"></script>
+    <script src="resource-navbar.js"></script>
+    <script src="timeout.js"></script>
+</html>
